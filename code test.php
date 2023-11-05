@@ -4,8 +4,8 @@ function rotLeft($a, $d) {
     $rotated = [];  // Create a new array to store the rotated elements
     $newd = $d % $n;
 
-    $left = array_slice($a, $d);
-    $right = array_slice($a, 0, $d);
+    $left = array_slice($a, $newd);
+    $right = array_slice($a, 0, $newd);
 
     // Merge the two parts
     $rotated = array_merge($left, $right);
